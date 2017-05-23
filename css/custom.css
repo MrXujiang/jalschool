@@ -1,0 +1,574 @@
+/*---reset---*/
+      *{
+        list-style-type:none;
+        font-family: 'Microsoft Yahei', '宋体', arial, 'Hiragino Sans GB', Helvetica;
+       }
+      i {
+         margin-right: 4px;
+       }
+      a:focus { outline: none; }
+      ul,li {
+        list-style: none;
+        display: inline-block;
+      }
+      p {
+        margin-bottom: 4px;
+      }
+/*公共样式*/
+      .text-gray {color: #ADADAD;}
+      .text-blue {color: #2098D1;}
+      .text-space {padding-left: 2em;}
+      .time {
+      	font-size: 14px;
+      	color: #ADADAD;
+      }
+      @media screen and (max-width:748px) {
+      	h3 { font-size: 20px; }
+      }
+/*公共样式结束*/
+     
+/*---首页样式---*/
+/*---header---*/
+      body {
+         position: relative;
+         min-width: 394px; 
+       }
+       .affix {
+          top:0;
+          width: 100%;
+          z-index: 9999 !important;
+       }
+       .navbar {
+         /*消除Navbar底部默认边距*/
+          margin-bottom: 0px;
+          background-color: #fff;
+       }
+       .top-header {
+         padding: 8px 0;
+         background-color: #1AC6D5;
+         color: #fff;
+       }
+       .header-local,
+       .header-contact {
+         float: left;
+         width: 195px;
+       }
+       .header-local {
+         cursor: pointer;
+       }
+       .top-header a {
+         display: inline-block;
+         float: right;
+         margin-left: 12px;
+         width: 24px;
+         text-align: center;
+         color: #fff;
+         text-decoration: none;
+         cursor: pointer;
+         -webkit-transition: color .6s;
+         -moz-transition: color .6s;
+         -ms-transition: color .6s;
+         transition: color .6s;
+       }
+       .top-header a:first-child {
+         width:80px;
+       }
+       .top-header a:hover {
+         color: #000; 
+       }
+       
+       .navbar-header {
+         height: 84px;
+       }
+       .navbar-header > .logo {
+         width: 240px;
+       }
+       .navbar-header > .logo > img {
+         width: 100%;
+       }
+       .navbar-nav {
+         padding-top: 18px;
+       }
+       .navbar-right > li > a {
+         padding-left: 10px; 
+       }
+       .navbar-nav > li > a.h5-about {
+         color: #AC2925;
+         font-size: 16px;
+       }
+       .navbar-nav > li > a.h5-about:hover {
+         color: #AC2925;
+         border-bottom: 2px solid #AC2925;
+       }
+       /*---登录框---*/
+      .modal-dialog {
+        position: relative;
+        width: 78%;
+        margin: 11%;
+      }
+      .model-body {
+        
+      }
+      .userform .col-sm-3 {
+        padding-right: 0;
+      }
+      .nav-tabs {
+        padding-left: 32%;
+        border-bottom: none;
+      }
+       .nav-tabs > li.active > a,
+       .nav-tabs > li.active > a:hover,
+       .nav-tabs > li.active > a:focus {
+         border: none;
+         border-top: 3px solid #1AC6D5;
+         color: #555;
+         cursor: default;
+       }
+      .nav-tabs > li > a {
+        font-size: 18px;
+        border-radius: 0;
+      }
+      @media (min-width: 768px) {
+        .modal-dialog {
+          width: 480px;
+          margin: 30px auto;
+        }
+        .modal-content {
+          -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+                  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+        }
+        .nav-tabs > li > a {
+          font-size: 24px;
+        }
+      }
+       /*---轮播图---*/
+      #myCarousel .banner-arrow {
+         position: absolute;
+         top: 42%;
+         left: 40%;
+       }
+       .carousel-inner > .item > a > img {
+         width: 100%;
+       }
+       /*---内容---*/
+      .chat > h1,
+      .itemCenter > h1,
+      .achieveWall > h1,
+      .partner > h1 {
+        font-size: 28px;
+        color: #737373;
+        padding-top: 36px;
+        padding-bottom: 24px;
+      }
+      .chat > h1 > span,
+      .itemCenter > h1 > span,
+      .achieveWall > h1 > span,
+      .partner > h1 > span {
+        border-left: 2px solid #ADADAD;
+        font-size: 16px;
+        padding-left: 12px;
+        margin-left: 12px;
+        color: #ADADAD;
+      }
+      .chat > h1 > a,
+      .itemCenter > h1 > a,
+      .achieveWall > h1 > a,
+      .partner > h1 > a {
+        float: right;
+        font-size: 18px;
+        padding-top: 14px;
+        cursor: pointer;
+      }
+        
+      .chat-content,
+      .item-content {
+        position: relative;
+        width: 98%;
+        overflow: hidden;
+      }
+      .chat-content {
+        height: 220px;
+        color: #fff;
+      }
+      .chat-content > .chat-1,
+      .chat-content > .chat-2,
+      .chat-content > .chat-3,
+      .chat-content > .chat-4 {
+        padding-top: 92px;
+        height: 220px;
+        font-size: 36px;
+        text-align: center;
+      }
+      .chat-content > .chat-1 {
+        background: #D58512 url(../img/chat/chat1.jpg);  
+      }
+      .chat-content > .chat-2 {
+        background: #D58512 url(../img/chat/chat2.jpg);
+      }
+      .chat-content > .chat-3 {
+        background: #D58512 url(../img/chat/chat3.jpg);
+      }
+      .chat-content > .chat-4 {
+        background: #D58512 url(../img/chat/chat4.jpg);
+      }
+      .chat-content > .chat-1,
+      .chat-content > .chat-2,
+      .chat-content > .chat-3,
+      .chat-content > .chat-4 {
+        background-size: 154%;
+      }
+      .chat-content > .chat-tit {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        padding-top: 10px;
+        display: none;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        color: #fff;
+        background-color: rgba(0,0,0,.8);
+        cursor: pointer;
+      }
+      .chat-content > .chat-tit > a.btn,
+      .item-info > .item-btn > a.btn {
+        margin-right: 8px;
+        margin-top: 6px;
+        padding: 4px 8px;
+      }
+      .chat-content:hover .chat-tit {
+        display:block;
+      }
+      
+      /*---itemCenter---*/
+     .item-content {
+       margin-bottom: 12px;
+       padding: 10px 0 14px;
+       width: 100%;
+       background-color: #CCC;
+       border-radius: 4px;
+       color: #444444;
+       -webkit-transition: box-shadow .4s;
+       -moz-transition: box-shadow .4s; 
+       transition: box-shadow .4s;
+     }
+     .item-content:hover {
+       box-shadow: 0 6px 8px #D5D5D5;
+     }
+     .item-content > a {
+       position: relative;
+       display: block;
+       width: 100%;
+       text-align: center;
+     }
+      .item-content > a > img {
+        width: 90%;
+        height: 140px;
+      }
+      
+      /*---item-guide---*/
+      
+      
+      /*---成果墙---*/
+     .achieve-content,
+     .achieve-icon {
+       position: relative;
+       width: 100%;
+       height: 160px;
+       overflow: hidden;
+       color: #fff;
+     }
+     .achieve-icon {
+       background-color: #0c9;
+     }
+     .achieve-icon > a {
+       position: absolute;
+       left: 50%;
+       top: 30px;
+       margin-left: -50px;
+       padding-top: 20px;
+       display: block;
+       width:100px;
+       height: 100px;
+       border-radius: 50%;
+       background-color: #fff;
+       text-align: center;
+       color: #0c9;
+       text-decoration: none;
+     }
+     .achieve-content > a > img,
+     .partner-content > a > img {
+       width: 100%;
+       height: 160px;
+       transition: width .6s, height .6s;
+     }
+     .achieve-content > a > img:hover,
+     .partner-content > a > img:hover {
+       width: 120%;
+       height: 192px;
+     }
+     .achieve-info {
+       position: absolute;
+       bottom: 0;
+       width: 100%;
+       background-color: rgba(0,0,0,.7);
+       text-align: center;
+     }
+     .team-category {
+       position: absolute;
+       right: 0;
+       top: 0;
+       padding: 2px 12px;
+       background-color: #0c9;
+     }
+     .seniorRoad {
+       margin-top: 24px;
+     }
+     dt,
+     dd {
+       float: left;
+     }
+     dt {
+       margin-right: 12px;
+     }
+     dt > a > img {
+       height: 110px;
+       width: 140px;
+     }
+     dd.g-top {
+       padding-top: 30px;
+     }
+     dd > a {
+       text-decoration: none;
+       color: #737373;
+     }
+     dd > a:hover {
+       color: #000;
+     }
+     
+     /*---合伙人---*/
+     .partner-content {
+       width: 100%;
+       height: 260px;
+       overflow: hidden;
+       color: #999;
+     }
+     .partner-info {
+       padding: 10px 0 10px 20%;
+     }
+     .partner-info > p {
+       margin-bottom: 0;
+     }
+     
+     /*-----sider-button-----*/
+      .sider-box {
+        position: fixed;
+        z-index: 9;
+        right: 18px;
+        bottom: 132px;
+        width: 72px;
+        color: #888;
+        text-align: center;
+      }
+      .app-download,
+      .weibo,
+      .wechat,
+      .back-top {
+        position: relative;
+        margin-top: 2px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background-color: rgba(0,0,0,.8);
+        cursor: pointer;
+      }
+      .app-code,
+      .weibo-code,
+      .wechat-code {
+        position: absolute;
+        z-index: 10;
+        right: 72px;
+        bottom: 0;
+        display: none;
+        width: 160px;
+        height: 208px;
+        background: url(../img/myQRcode.png) no-repeat left top;
+      }
+      .back-top > a {
+        text-decoration: none;
+        color: #888;
+        outline: none;
+      }
+      .back-top > a:hover {
+        color: #fff;
+      }
+
+     /*---footer---*/
+     .footer {
+       margin-top: 36px;
+       padding: 24px;
+       background-color: #222;
+       color: #777;
+     }
+     .footer > ul > li {
+       width: 100px;
+     }
+     .footer > ul > li > a {
+       color: #aaa;
+     }
+     .footer > p {
+       margin-bottom: 6px;
+     }
+     
+     /*---growroad页面---*/
+      .grow-write {
+        position: fixed;
+        width: 25%;
+        height: 40%;
+        padding-top: 15%;
+        padding-bottom: 30%;
+        text-align: center;
+        background: url(../img/grow/yinghua.jpeg) no-repeat center top;
+        background-size:100%;
+      }
+      .grow-write > h3 {
+      	font-size: 30px;
+      	color: #00f;
+      	font-family: "楷体";
+      	font-weight: bolder;
+      }
+      .grow-write > p {
+      	color: #00f;
+        font-family: arial;
+      }
+      .grow-tabs > .nav-tabs {
+      	padding-left: 0;
+      }
+      .grow-tabs > .nav > li > a{
+      	font-size: 18px;
+      }
+      .grow-list {
+      	padding-left: 0;
+      }
+      .grow-list > li {
+      	padding-top: 10px;
+      	padding-bottom: 20px;
+      	margin-bottom: 10px;
+      	width: 100%;
+      	border-bottom: 1px dashed #CCC;
+      }
+      .grow-list > li > a {
+      	float: right;
+      	width: 20%;
+      	height: 20%;
+      	min-width: 100px;
+      	border: 1px solid #ccc;
+      	border-radius: 4px;
+      }
+      .grow-list > li > a > img {
+      	width: 100%;
+      }
+      .list-top > a,
+      .list-tit > a,
+      .list-footer > a,
+      .grow-footer > ul >li > a {
+      	text-decoration: none;
+      	padding-right: 4px;
+      }
+      .list-tit {
+      	margin-top: 10px;
+      }
+      .list-tit > a {
+      	color: #555;
+      }
+      .list-tit > a:hover {
+      	color: #000;
+      }
+      .list-footer > a,
+      .grow-footer > ul >li > a {
+      	color: #ADADAD;
+      }
+      .list-footer > a:hover,
+      .grow-footer > ul >li > a:hover {
+      	color: #555;
+      }
+      .list-footer > span {
+      	cursor: pointer;
+      }
+      /*grow-road*/
+     .grow-road {
+     	padding-left: 0;
+     }
+     .grow-road > li {
+     	position: relative;
+     	z-index: 1;
+     	margin-right: 2.5%;
+     	margin-bottom: 24px;
+     	padding-bottom: 24px;
+     	width: 30%;
+     	text-align: center;
+     	vertical-align: top;
+     	cursor: pointer;
+     	box-shadow: 5px 5px 10px #d5d5d5;
+     	}
+     .grow-road > li img {
+     	width: 100%;
+     	height: 200px;
+     }
+     .grow-road > li > h5 {
+     	margin-bottom: 0;
+     }
+     .grow-road > li > p {
+       padding: 6px 10px 0;
+       margin-bottom: 0;
+       font-size: 12px;
+     }
+     .grow-road > li > .line {
+     	display: inline-block;
+     	width: 30%;
+     	height: 1px;
+     	border: 1px solid #C0C0C0;
+     	border-radius: 2px;
+     }
+     .grow-road > li > .mask {
+     	position: absolute;
+     	top: 0;
+     	padding-top: 70%;
+     	z-index: 4;
+     	width: 100%;
+     	height: 100%;
+     	background-color: rgba(255,255,255,0);
+     	transition: background-color .4s;
+     }
+     .mask > span {
+     	visibility: hidden;
+     }
+		 .grow-road > li:hover .mask {
+		 	background-color: rgba(255,255,255,.6);
+		 }
+		 .grow-road > li:hover .mask > span {
+		 	visibility: visible;
+     }
+     
+     /*小窗口编辑按钮*/
+    .write-btn {
+    	position: fixed;
+    	right: 10%;
+    	bottom: 120px;
+    	width: 60px;
+    	height: 60px;
+    	line-height:  60px;
+    	border-radius: 50%;
+    	background-color: #1AC6D5;
+    	text-align: center;
+    	color: #fff;
+    	cursor: pointer;
+    }
+      /*grow-footer*/
+     .grow-footer {
+     	padding-top: 12px;
+     }
+     .grow-footer > ul > li {
+     	padding-right: 10px;
+     }
+

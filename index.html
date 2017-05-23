@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>珈蓝学院</title>
+		<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/lib/bootstrap.css">
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header id="header">
+      <div class="top-header" id="header_top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-5 col-md-8">
+              <div class="header-local">
+                <i class="icon-map-marker"></i><span>武汉科技大学</span>
+              </div>
+              <div class="header-contact">
+                <span><i class="icon-phone"></i>联系电话：156-7167-7807</span>
+              </div>
+            </div>
+             <div class="col-xs-7 col-md-4">
+              <a class="top-icon"><i class="icon-download"></i>下载APP</a>
+              <a class="top-icon"><i class="icon-rss"></i></a>
+              <a class="top-icon"><i class="icon-renren"></i></a>
+              <a class="top-icon"><i class="icon-weibo"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------header-top结束------>
+      
+      <nav class="navbar navbar-default" data-spy="affix" data-offset-top="36">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand logo"><img src="img/logo.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav main-nav">
+              <li class="active"><a href="index">首页</a></li>    
+              <li><a href="itemcenter.html">项目中心</a></li>            
+              <li><a href="growroad.html">成长之路</a></li>
+              <li><a href="partner.html">校园合伙人</a></li>
+              <li><a class="h5-about" href="jalh5.html"><i class="icon-bell-alt"></i>关于</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><i class="icon-search"></i></a></li>
+              <li><a href="#"><i class="icon-edit"></i>发布</a></li>
+              <li><a data-toggle="modal" href="#loginBox"><i class="icon-user"></i>登录</a></li>
+            </ul>
+          </div>
+          <!--- 登录框 --->
+          <div id="loginBox" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+           
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h6 class="modal-title">欢迎登录珈蓝学院！</h6>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-tabs">
+                   <li><a data-toggle="tab" href="#register">注册</a></li>
+                   <li class="active"><a data-toggle="tab" href="#login">登录</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="login">
+                      <form role="form" class="userform form-horizontal"> 
+                        <div class="form-group">
+                          <label for="username" class="control-label col-sm-3">用户名：</label>
+                          <div class="col-sm-7">
+                            <input id="username" class="form-control" type="text" placeholder="请输入用户名" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="control-label col-sm-3">密码：</label>
+                          <div class="col-sm-7">
+                            <input id="password" class="form-control" type="password" placeholder="请输入密码" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <div class="checkbox">
+                              <label><input type="checkbox">记住密码</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <button class="btn btn-primary btn-block" type="button">登录</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="register">
+                      <form role="form" class="userform form-horizontal"> 
+                        <div class="form-group">
+                          <label for="new-username" class="control-label col-sm-3">用户名：</label>
+                          <div class="col-sm-7">
+                            <input id="r-username" class="form-control" type="text" placeholder="请输入用户名" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="r-password" class="control-label col-sm-3">确认密码：</label>
+                          <div class="col-sm-7">
+                            <input id="r-password" class="form-control" type="password" placeholder="请输入密码" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="r-password-again" class="control-label col-sm-3">密码：</label>
+                          <div class="col-sm-7">
+                            <input id="r-password-again" class="form-control" type="password" placeholder="请确认密码" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <div class="checkbox">
+                              <label><input type="checkbox">记住密码</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <button class="btn btn-primary btn-block" type="button">注册</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!------banner部分------>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+    
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="#"><img src="img/banner/banner1.jpg" alt="banner1"></a>
+          <div class="carousel-caption">
+            <h3>Chania</h3>
+            <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+          </div>
+        </div>
+    
+        <div class="item">
+          <a href="#"><img src="img/banner/banner2.jpg" alt="banner2"></a>
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beatiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="#"><img src="img/banner/banner3.jpg" alt="banner3"></a>
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beatiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="#"><img src="img/banner/banner4.jpg" alt="banner4"></a>
+          <div class="carousel-caption">
+            <h3>Flowers</h3>
+            <p>Beatiful flowers in Kolymbari, Crete.</p>
+          </div>
+        </div>
+      </div>
+    
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="icon-chevron-left icon-2x banner-arrow" aria-hidden="true"></span>
+        <span class="sr-only">上一页</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="icon-chevron-right icon-2x banner-arrow" aria-hidden="true"></span>
+        <span class="sr-only">下一页</span>
+      </a>
+    </div>
+    <!------banner end------>
+    <!------项目分类------>
+    <div class="container">
+      <section>
+        <div class="chat">
+          <h1>深度访谈 <span>认识自己，让视野更辽阔</span><a>更多&gt;&gt;</a></h1>
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <div class="chat-content">
+                <div class="chat-1">第一期</div>
+                <div class="chat-tit">
+                  <h3>主题：我是谁</h3>
+                  <p>主讲人：丁宗燃</p>
+                  <p>主讲时间：2016.02.15</p>
+                  <p>限额：20人</p>
+                  <a class="btn btn-primary">报名参加</a><a class="btn btn-warning">在线观看</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="chat-content">
+                <div class="chat-2">第二期</div>
+                <div class="chat-tit">
+                  <h3>主题：我是谁</h3>
+                  <p>主讲人：丁宗燃</p>
+                  <p>主讲时间：2016.02.15</p>
+                  <p>限额：20人</p>
+                  <a class="btn btn-primary">报名参加</a><a class="btn btn-warning">在线观看</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="chat-content">
+                <div class="chat-3">第三期</div>
+                <div class="chat-tit">
+                  <h3>主题：我是谁</h3>
+                  <p>主讲人：丁宗燃</p>
+                  <p>主讲时间：2016.02.15</p>
+                  <p>限额：20人</p>
+                  <a class="btn btn-primary">报名参加</a><a class="btn btn-warning">在线观看</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="chat-content">
+                <div class="chat-4">第四期</div>
+                <div class="chat-tit">
+                  <h3>主题：我是谁</h3>
+                  <p>主讲人：丁宗燃</p>
+                  <p>主讲时间：2016.02.15</p>
+                  <p>限额：20人</p>
+                  <a class="btn btn-primary">报名参加</a><a class="btn btn-warning">在线观看</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <section>
+        <div class="itemCenter">
+          <h1>项目中心  <span>每一个小小的项目，都会为成长带来微小而美好的改变</span> <a>更多&gt;&gt;</a></h1>
+          <div class="row">
+            <div class="col-xs-6 col-md-3">
+              <div class="item-content">
+                <a href="#">
+                  <img src="img/item/tree.jpg">
+                </a>
+                <div class="item-info text-center">
+                  <h4><a href="con_huyun.html">创业者的咖啡厅</a></h4>
+                  <p>发布机构：完美工作室</p>
+                  <p>发布时间：2016.02.15</p>
+                  <div class="item-btn">
+                    <a class="btn btn-default disabled">招聘结束</a>
+                    <a class="btn btn-primary" href="con_huyun.html">查看详情</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="item-content">
+                <a href="#">
+                  <img src="img/item/38noodles.jpg">
+                </a>
+                <div class="item-info text-center">
+                  <h4><a href="#">38℃面吧</a></h4>
+                  <p>发布机构：完美工作室</p>
+                  <p>发布时间：2016.02.15</p>
+                  <div class="item-btn">
+                    <a class="btn btn-warning" href="con_huyun.html">正在招聘</a>
+                    <a class="btn btn-primary" href="con_huyun.html">查看详情</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="item-content">
+                <a href="#">
+                  <img src="img/item/meter.png">
+                </a>
+                <div class="item-info text-center">
+                  <h4><a href="#">汇云科技</a></h4>
+                  <p>发布机构：完美工作室</p>
+                  <p>发布时间：2016.02.15</p>
+                  <div class="item-btn">
+                    <a class="btn btn-default disabled">招聘结束</a>
+                    <a class="btn btn-primary" href="con_huyun.html">查看详情</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-3">
+              <div class="item-content">
+                <a href="#">
+                  <img src="img/item/homework.jpg">
+                </a>
+                <div class="item-info text-center">
+                  <h4><a href="#">汇云科技</a></h4>
+                  <p>发布机构：完美工作室</p>
+                  <p>发布时间：2016.02.15</p>
+                  <div class="item-btn">
+                    <a class="btn btn-default disabled">招聘结束</a>
+                    <a class="btn btn-primary" href="con_huyun.html">查看详情</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </section>
+      <section>
+        <div class="achieveWall">
+          <h1>成长之路 <span>成功本不能复制，前人的经验却能让我们少走弯路</span><a>更多&gt;&gt;</a></h1>
+          <div class="row">
+            <div class="col-xs-12 col-md-3">
+              <div class="achieve-icon">
+                <a href="#">
+                  <i class="icon-indent-right icon-4x"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="achieve-content">
+                <a href="#">
+                  <img src="img/grow/IMG_20150723_163752.jpg">
+                </a>
+                <div class="team-category">创业团队</div>
+                <div class="achieve-info text-center">
+                                               互联网+小分队: 半夏汇云科技
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="achieve-content">
+                <a href="#">
+                  <img src="img/grow/IMG_20150726_103354.jpg">
+                </a>
+                <div class="team-category">高校科研</div>
+                <div class="achieve-info text-center">
+                  e+1: 易创教育科技
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-3">
+              <div class="achieve-content">
+                <a href="#">
+                  <img src="img/grow/老师.jpg">
+                </a>
+                <div class="team-category">企业项目</div>
+                <div class="achieve-info text-center">
+                                                梦之队: 智能制造实验室
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row seniorRoad">
+            <div class="col-xs-12 col-md-3">
+              <div class="achieve-icon">
+                <a href="#">
+                  <i class="icon-group icon-4x"></i>
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-5">
+              <div class="senior-content">
+                <dl>
+                <dt><a href="#"><img src="img/road1.jpg"></a></dt>
+                <dd class="g-top"><a href="#">徐江(研发工程师):do or never do.</a></dd>
+                <dd><a href="#">戴崇武(市场总监):克制自己的欲望,让自...</a></dd>
+                <dd><a href="#">丁宗燃(产品经理):走自己的路,敢想敢做...</a></dd>
+                </dl>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+              <div class="senior-content">
+                <dl>
+                  <dt><a href="#"><img src="img/road2.jpg"</a></dt>
+                  <dd class="g-top"><a href="#">如何打造一支有执行力的团队</a></dd>
+                  <dd><a href="#">在做项目期间，遇到的最大...</a></dd>
+                  <dd><a href="#">自己学习Java的方法有哪些...</a></dd>
+                </dl>
+                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section>
+        <div class="partner">
+          <h1>校园合伙人 <span>齐头并进，共创未来</span><a>更多&gt;&gt;</a></h1>
+          <div class="row">
+            <div class="col-xs-6 col-md-2">
+              <div class="partner-content">
+                <a href="#">
+                  <img src="img/campus/peo1.jpg">
+                </a>
+                <div class="partner-info text-left">
+                  <p>姓名：Bell Zhang</p>
+                  <p>所属部门：行政部</p>
+                  <p>岗位：1号合伙人</p>
+                  <p>蓝鲸号：JL00025</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <div class="partner-content">
+                <a href="#">
+                  <img src="img/campus/peo2.jpg">
+                </a>
+                <div class="partner-info text-left">
+                  <p>姓名：Bell Zhang</p>
+                  <p>所属部门：行政部</p>
+                  <p>岗位：1号合伙人</p>
+                  <p>蓝鲸号：JL00016</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <div class="partner-content">
+                <a href="#">
+                  <img src="img/campus/peo3.jpg">
+                </a>
+                <div class="partner-info text-left">
+                  <p>姓名：Bell Zhang</p>
+                  <p>所属部门：研发部</p>
+                  <p>岗位：1号合伙人</p>
+                  <p>蓝鲸号：JL00036</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <div class="partner-content">
+                <a href="#">
+                  <img src="img/campus/peo5.jpg">
+                </a>
+                <div class="partner-info text-left">
+                  <p>姓名：Bell Zhang</p>
+                  <p>所属部门：人事部</p>
+                  <p>岗位：2号合伙人</p>
+                  <p>蓝鲸号：JL00026</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <div class="partner-content">
+                <a href="#">
+                  <img src="img/campus/peo6.jpg">
+                </a>
+                <div class="partner-info text-left">
+                  <p>姓名：Bell Zhang</p>
+                  <p>所属部门：财务部</p>
+                  <p>岗位：3号合伙人</p>
+                  <p>蓝鲸号：JL00026</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-2">
+              <div class="partner-content">
+                <a href="#">
+                  <img src="img/campus/peo7.jpg">
+                </a>
+                <div class="partner-info text-left">
+                  <p>姓名：Bell Xu</p>
+                  <p>所属部门：市场部</p>
+                  <p>岗位：4号合伙人</p>
+                  <p>蓝鲸号：JL00026</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </div>
+    
+    <!--bottom-banner-->
+    <div class="container">
+      
+    </div>
+    
+    <!-------浮动按钮------->
+    <div class="sider-box hidden-xs">
+      <div class="app-download">
+        <span class="">APP下载</span>
+        <span class="app-code"></span>
+      </div>
+      <div class="weibo">
+        <span class="">微博</span>
+        <span class="weibo-code"></span>
+      </div>
+      <div class="wechat">
+        <span class="">微信</span>
+        <span class="wechat-code"></span>
+      </div>
+      <div class="back-top">
+        <a href="#"><i class="icon-arrow-up icon-2x"></i></a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer text-center">
+        <ul>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作中心</a></li>
+          <li><a href="#">法律责任</a></li>
+          <li><a href="#">返回顶部</a></li>
+        </ul>
+        <p>地址：武汉科技大学青山校区</p>
+        <p>版权所有：完美工作室</p>
+      </div>
+    </footer>
+	  <script src="js/lib/jquery-1.9.1.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/sider_unit.js"></script>
+	</body>
+</html>

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>珈蓝学院</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/lib/bootstrap.css">
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      /*---itemcontent页面---*/
+      /*公共样式*/
+       .text-gray {color: #ADADAD;}
+       .text-blue {color: #2098D1;}
+       .text-space {padding-left: 2em;}
+      /*公共样式结束*/
+     .item-header,
+     .item-intro,
+     .item-achievement,
+     .item-enroll {
+       margin-top: 24px;
+       margin-bottom: 24px;
+     }
+     .item-header {
+       padding: 14px 6px;
+       border: 1px solid #DDD;
+       border-radius: 4px;
+       background-color: #fff;
+     }
+      .item-logo {
+        width: 100%;
+      }
+      .item-logo > img {
+        width: 80%;
+        min-width: 80px;
+      }
+      .item-title {
+       padding-top: 14px;
+       border-right: 2px solid #eee;
+      }
+      .item-location {
+        margin-left: -16px;
+      }
+      .item-save {
+        padding-top: 18px;
+      }
+      .item-save > a {
+        text-decoration: none;
+        color: #EC971F;
+        cursor: pointer;
+      }
+
+      .item-intro > h4,
+      .item-request > h4,
+      .item-achievement > h4,
+      .item-enroll > h4 {
+        border-left: 3px solid #2098D1;
+        padding-left: 6px;
+      }
+      .item-achievement > p {
+        text-indent: 1em;
+      }
+      .item-intro > p {
+        text-indent: 2em;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .apply {
+        position: fixed;
+        right: 12%;
+        bottom: 15%;
+      }
+      .apply > a {
+        display: block;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #2098D1;
+        text-decoration: none;
+        line-height: 100px;
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        transition: background-color .4s;
+      }
+      .apply > a:hover {
+        background-color: #000;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header id="header">
+      <div class="top-header" id="header_top">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-5 col-md-8">
+              <div class="header-local">
+                <i class="icon-map-marker"></i><span>武汉科技大学</span>
+              </div>
+              <div class="header-contact">
+                <span><i class="icon-phone"></i>联系电话：156-7167-7807</span>
+              </div>
+            </div>
+             <div class="col-xs-7 col-md-4">
+              <a class="top-icon"><i class="icon-download"></i>下载APP</a>
+              <a class="top-icon"><i class="icon-rss"></i></a>
+              <a class="top-icon"><i class="icon-renren"></i></a>
+              <a class="top-icon"><i class="icon-weibo"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!------header-top结束------>
+      
+      <nav class="navbar navbar-default" data-spy="affix" data-offset-top="36">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="index.html" class="navbar-brand logo"><img src="img/logo.png"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav main-nav">
+              <li><a href="index.html">首页</a></li>    
+              <li class="active"><a href="itemcenter.html">项目中心</a></li>            
+              <li><a href="growroad.html">成长之路</a></li>
+              <li><a href="partner.html">校园合伙人</a></li>
+              <li><a class="h5-about" href="jalh5.hhtml"><i class="icon-bell-alt"></i>关于</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#"><i class="icon-search"></i></a></li>
+              <li><a href="#"><i class="icon-edit"></i>发布</a></li>
+              <li><a data-toggle="modal" href="#loginBox"><i class="icon-user"></i>登录</a></li>
+            </ul>
+          </div>
+          <!--- 登录框 --->
+          <div id="loginBox" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+           
+              <!-- Modal content-->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h6 class="modal-title">欢迎登录珈蓝学院！</h6>
+                </div>
+                <div class="modal-body">
+                  <ul class="nav nav-tabs">
+                   <li><a data-toggle="tab" href="#register">注册</a></li>
+                   <li class="active"><a data-toggle="tab" href="#login">登录</a></li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane fade in active" id="login">
+                      <form role="form" class="userform form-horizontal"> 
+                        <div class="form-group">
+                          <label for="username" class="control-label col-sm-3">用户名：</label>
+                          <div class="col-sm-7">
+                            <input id="username" class="form-control" type="text" placeholder="请输入用户名" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="control-label col-sm-3">密码：</label>
+                          <div class="col-sm-7">
+                            <input id="password" class="form-control" type="password" placeholder="请输入密码" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <div class="checkbox">
+                              <label><input type="checkbox">记住密码</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <button class="btn btn-primary btn-block" type="button">登录</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="tab-pane fade" id="register">
+                      <form role="form" class="userform form-horizontal"> 
+                        <div class="form-group">
+                          <label for="new-username" class="control-label col-sm-3">用户名：</label>
+                          <div class="col-sm-7">
+                            <input id="r-username" class="form-control" type="text" placeholder="请输入用户名" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="r-password" class="control-label col-sm-3">确认密码：</label>
+                          <div class="col-sm-7">
+                            <input id="r-password" class="form-control" type="password" placeholder="请输入密码" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="r-password-again" class="control-label col-sm-3">密码：</label>
+                          <div class="col-sm-7">
+                            <input id="r-password-again" class="form-control" type="password" placeholder="请确认密码" required>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <div class="checkbox">
+                              <label><input type="checkbox">记住密码</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <div class="col-sm-offset-3 col-sm-7">
+                            <button class="btn btn-primary btn-block" type="button">注册</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!------banner部分------>
+    
+    <!------banner end------>
+    <!------项目分类------>
+    <div class="container">
+      <h3>半夏汇云科技</h3>
+      <section>
+        <div class="row">
+          <div class="col-xs-12 col-md-10">
+            <div class="item-header clearfix">
+              <div class="col-xs-2 col-md-2">
+                  <div class="item-logo pull-left">
+                    <img src="img/item/banxia.png">
+                  </div>
+              </div>
+              <div class="col-xs-8 col-md-9">
+                  <div class="item-title clearfix">
+                    <div class="item-location">
+                      <div class="col-xs-6">
+                        <p>
+                          <span class="item-source text-gray">发布机构：</span>
+                          <span class="item-team">武汉科技大学半夏汇云团队</span>
+                        </p>
+                        <p>
+                          <span class="item-end text-gray">截止时间：</span>
+                          <span class="item-endtime">2016.12.22</span>
+                        </p>
+                        <p>
+                          <span class="item-company text-gray">完美工作室：</span>
+                          <span class="item-validated"><i class="icon-fire text-primary"></i>已验证</span>
+                        </p>
+                      </div>
+                      <div class="col-xs-6">
+                        <p>
+                          <span class="text-gray">项目类别：</span>
+                          <span>智能制造(企业项目)</span>
+                        </p>
+                        <p>
+                          <span class="item-publish text-gray">发布来源：</span>
+                          <span class="item-endtime">市场部戴崇武</span>
+                        </p>
+                        <p>
+                          <span class="item-click-rate text-gray">点击次数：</span>
+                          <span class="item-click-num"></i>2033</span>
+                        </p>
+                      </div>
+   
+                </div>
+              </div>
+            </div>
+              <div class="col-xs-2 col-md-1"> 
+                <div class="item-save">
+                  <a class="icon-star-empty icon-2x"></a>
+                  <div class="">收藏</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 hidden-xs">
+            
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-10">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                                          正文介绍
+              </div>
+              <div class="panel-body">
+                 <h3 class="text-center">寻找未来筑梦师</h3>
+                 <p class="text-right">——武汉科技大学半夏汇云项目组招贤纳士</p>
+                 <div class="item-intro">
+                   <h4>项目简介：</h4>
+                   <p>
+                            半夏汇云团队是一家专注于半夏产业的B2B垂直电商服务提供商，主要以线下智能化机械服务和云端半夏信息可溯源系统<br />
+                            链接起半夏种植户、终端药厂以及个人消费者。团队通过半夏收获和清洗脱皮机械进入半夏市场，利用新科技和互联网服务模<br />
+                            式为终端客户提供半夏药材销售服务，云端半夏信息溯源系统打造道地药材品质。本公司拥有核心专利4项，包括两项发明专<br />
+                            利，具备高效的技术研发团队等优势，华中科技大学朱志亮博士机器识别技术，利用智能化机械与移动互联网的资源，颠覆与<br />
+                            传统中药材供应链中冗杂，品质造假的问题，致力于打造集智能化机械服务、药材品质可溯源的中药材解决方案服务商。 团<br />
+                            队在第二届互联网+大赛中获得省级铜奖，2016创青春湖北省创业大赛获创业组省级铜奖，现为实现项目落地以及征战第三<br />
+                            届中国互联网+大赛再创辉煌发出此次邀请，愿有才之士共筑未来梦想！                        
+                   </p>
+                 </div>
+                 <div class="item-request">
+                   <h4>招聘岗位及要求：</h4>
+                   <p>
+                     <span>1.前端开发(2人)</span>
+                   </p>
+                   <p>
+                     <span>任职要求：</span>
+                   </p>
+                   <p class="text-space">
+                   1、大三年级以上计算机及相关专业，掌握常用数据结构和算法，能够熟练书写；<br>
+                   2、熟练应用Web前端技术，例如HTML、JS、Jquery、CSS等；<br>
+                   3、初步掌握数据库技术(MySQL，有实际项目数据库schema设计或sql性能调优者经验者优先。
+                   </p>
+                   <p><span>岗位职责：</span></p>
+                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责协助前端工程师完成可溯源系统的前端开发。</p>
+                   
+                   <p>
+                     <span>2.产品助理(2人)</span>
+                   </p>
+                   <p>
+                     <span>任职要求：</span>
+                   </p>
+                   <p class="text-space">
+                    1、负责网站官方微信和微博的维护与推广;<br />
+                    2、严格按微信和微博日常内容、互动工作标准规范运营微信和微博，并不断优化日常工作标准、规范；<br />
+                    3、根据当前数据现状协助制定未来目标达成的运营方案，并良好地执行到位；
+
+                   </p>
+                   <p><span>岗位职责：</span></p>
+                   <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;负责协助前端工程师完成可溯源系统的前端开发。</p>
+                 </div>
+                 <div class="item-achievement">
+                   <h4>你将收获</h4>
+                   <p><i class="icon-bookmark text-blue"></i>在项目中学习提升技术。</p>
+                   <p><i class="icon-bookmark text-blue"></i>收获一群志同道合的好哥们。</p>
+                   <p><i class="icon-bookmark text-blue"></i>免费的培训机会和丰富的报酬。</p>
+                   <p><i class="icon-bookmark text-blue"></i>珈蓝学院相关实习证书。</p>
+                   </p>
+                 </div>
+                 <div class="item-enroll">
+                   <h4>报名方式：</h4>
+                   <p>
+                     1.网址：www.banxia.com <br />
+                     2.QQ群：142756893 <br />
+                     3.咨询电话： 027-20378475
+                   </p>
+                 </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 hidden-xs">
+            
+          </div>
+        </div> 
+      </section>
+    </div>
+    <div class="apply">
+      <a href="#">报名加入</a>
+    </div>
+    <!--bottom-banner-->
+    <div class="container">
+      
+    </div>
+    
+    <!-------浮动按钮------->
+    <div class="sider-box hidden-xs">
+      <div class="app-download">
+        <span class="">APP下载</span>
+        <span class="app-code"></span>
+      </div>
+      <div class="weibo">
+        <span class="">微博</span>
+        <span class="weibo-code"></span>
+      </div>
+      <div class="wechat">
+        <span class="">微信</span>
+        <span class="wechat-code"></span>
+      </div>
+      <div class="back-top">
+        <a href="#"><i class="icon-arrow-up icon-2x"></i></a>
+      </div>
+    </div>
+    <footer>
+      <div class="footer text-center">
+        <ul>
+          <li><a href="#">关于我们</a></li>
+          <li><a href="#">合作中心</a></li>
+          <li><a href="#">法律责任</a></li>
+          <li><a href="#">返回顶部</a></li>
+        </ul>
+        <p>地址：武汉科技大学青山校区</p>
+        <p>版权所有：完美工作室</p>
+      </div>
+    </footer>
+    <script src="js/lib/jquery-1.9.1.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/sider_unit.js"></script>
+    <script>
+      $(function(){
+        var $body = $('body');
+        var $save = $('.item-save a');
+        //alert($save.html());
+        $body.css('background-color','#EEE')
+        $save.hover(function(){
+          $save.removeClass('icon-star-empty');
+          $save.addClass('icon-star');
+        },function(){
+          $save.removeClass('icon-star');
+          $save.addClass('icon-star-empty');
+        })
+      })
+    </script>
+  </body>
+</html>
+
+

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>珈蓝学院h5宣传页面</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/lib/bootstrap.css">
+    <link rel="stylesheet" href="css/lib/font-awesome.min.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      /*---itemcontent页面---*/
+      /*公共样式*/
+       .text-gray {color: #ADADAD;}
+       .text-blue {color: #2098D1;}
+       .text-space {padding-left: 2em;}
+       ul,li {
+         list-style: none;
+       }
+       a,a:hover { text-decoration:none;
+           color: #fff;
+       }
+      /*公共样式结束*/
+      
+       body {
+         position: relative;
+
+       }
+       ul.nav-pills {
+         top: 50%;
+         margin-top: -56px;
+         left: 6%;
+         position: fixed;
+       }
+       ul.nav-pills > li {
+         margin-bottom: 8px;
+         padding: 4px;
+         border: 1px solid #fff;
+         border-radius: 50%;
+       }
+       ul.nav-pills > li > a {
+         padding: 0;
+         width: 20px;
+         height: 20px;
+         border-radius: 50%;
+       }
+       ul.nav-pills > li.active {
+         background-color: #fff;
+       }
+       /*使元素全屏显示*/
+      .fullpage > .section {
+        height: 100vh;
+        /*使背景图像完全覆盖窗口区域*/
+        background-size: cover;
+      }
+      .fullpage > .section1 {
+        background: url(img/h5sucai.jpg) no-repeat 0 0;
+      }
+      .fullpage > .section2 {
+        background-color: #0F9E5E;
+      }
+      .fullpage > .section3 {
+        background: url(img/yinghua.jpg) no-repeat 0 0;
+        background-size: 100%;
+      }
+      .fullpage > .section4 {
+        background: url(img/honshan.jpg) no-repeat 0 0;
+        background-size: 100%;
+      }
+      .fullpage > .about-us {
+        padding-top: 24px;
+        background-color: #286090;
+        height: 200px;
+        text-align: center;
+        color: #fff;
+      }
+      .enter-index {
+        margin-top: 6%;
+        margin-right: 6%;
+      }
+      .section-txt {
+        margin-left: 15%;
+        padding-top: 10%;
+        width: 70%;
+        line-height: 30px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+      }
+      .txt-bg {
+        background: rgba(0,0,0,.6);
+        padding: 10% 5% 10%;
+      }
+      .section-value {
+        margin-left: 50%;
+        padding-top: 10%;
+        width: 40%;
+        font-size: 18px;
+      }
+      .section-value > p {
+        text-indent: 2em;
+      }
+      .h5-logo {
+         display: inline-block;
+         width: 120px;
+         height: 80px;
+         background: url(img/logo_icon.png) no-repeat left top;
+         background-size: 100%;
+       }
+
+       .item-model > li {
+         float: left;
+         margin: 8%;
+         cursor: pointer;
+       }
+      .item-model > li > .icon {
+        display: block;
+        font-size: 72px;
+        transition: transform .6s;
+      }
+      .item-model > li:hover .icon {
+        transform: rotate(360deg);
+      }
+      
+      /*pager页脚*/
+     .about-us > h2 {
+        display: inline-block;
+        padding: 10px 20px;
+        border-radius: 8px;
+        background-color: #1AC6D5;
+      }
+      .about-us > h2 > a {
+        transition: color .6s;
+      }
+      .about-us > h2 > a:hover {
+        color: #204D74;        
+      }
+     #backtop {
+       padding: 6px 40px;
+       display: inline-block;
+       cursor: pointer;
+     } 
+    </style>
+  </head>
+  <body data-spy="scroll" data-target="#myScrollspy">
+    <div id="myScrollspy">
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1"></a></li>
+        <li><a href="#section2"></a></li>
+        <li><a href="#section3"></a></li>
+        <li><a href="#section4"></a></li>
+        <li><a href="#about_us"></a></li>
+      </ul>
+    </div>
+    <div class="fullpage">
+      <div class="section section1" id="section1">
+        <div class="enter-index pull-right">
+          <a class="btn btn-primary" href="index.html">进入首页</a>
+          <span class="btn btn-default">帮助</span>
+        </div>
+        <div class="section-txt">
+          <a class="h5-logo" href="index.html"></a>
+          <h2>珈蓝学院</h2>
+          <p>迦蓝学院专注于大学教育，致力于在传统知识学习之外，开拓一种新的学习实践方式，让每个经历大学的你，有机会参与到大大小小的项目实习中，在项目历练中获得不一样的成长。</p>
+        </div>
+      </div>
+      
+      <div class="section section2" id="section2">
+        <div class="section-txt">
+          <h2>珈蓝模块</h2>
+          <p>迦蓝学院专注于大学教育，致力于在传统知识学习之外，开拓一种新的学习实践方式，让每个经历大学的你，有机会参与到大大小小的项目实习中，在项目历
+            练中获得不一样的成长。</p>
+          <ul class="item-model">
+            <li>
+              <span class="icon"><i class="icon-legal"></i></span>
+              <h3>实战项目</h3>
+            </li>
+            <li>
+              <span class="icon"><i class="icon-road"></i></span>
+              <h3>成长之路</h3>
+            </li>
+            <li>
+              <span class="icon"><i class="icon-group"></i></span>
+              <h3>校园合伙人</h3>
+            </li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="section section3" id="section3">
+        <div class="section-value">
+          <h2>价值观</h2>
+          <p>我们从高校中来，深刻体会当前我们大学遇到的问题，让我们痛苦的东西，必会给我们带来改变他的巨大力量；我们始终坚持价值导向，给我们的用户带来价
+            值是我们持久的动力，愿与诸位在真实的项目经历中成长，收获大学、收获一段人生。</p>
+        </div>
+      </div>
+      <div class="section section4" id="section4">
+        <div class="section-txt txt-bg">
+          <h2>珈蓝团队</h2>
+          <p>迦蓝学院由完美工作室团队运营，目前主要由在校大学生、高校导师及部分企业导师组成，创始团队在参加多个项目过程中，一直获得导师的悉心指导，四年
+            的折腾与坎坷的中深刻体会到真实的项目历练给我们带来的价值，我们在项目中历练中的学习成长、在困难中提升自我认知，都及其重要。</p>
+        </div>
+      </div>
+      <div class="about-us" id="about_us">
+          <h2><a href="index.html">Let us start!</a></h2>
+          <p>开启校园实践之旅</p>
+          <span class="icon-double-angle-up icon-3x" id="backtop"></span>
+      </div>
+    </div>
+    
+    
+    <script src="js/lib/jquery-1.9.1.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script>
+      $(function(){
+        $('.nav > li:nth-child(1)').click(function(){$('html,body').animate({scrollTop:$('.section1').offset().top}, 800);});
+        $('.nav > li:nth-child(2)').click(function(){$('html,body').animate({scrollTop:$('.section2').offset().top}, 800);});
+        $('.nav > li:nth-child(3)').click(function(){$('html,body').animate({scrollTop:$('.section3').offset().top}, 800);});
+        $('.nav > li:nth-child(4)').click(function(){$('html,body').animate({scrollTop:$('.section4').offset().top}, 800);});
+        $('.nav > li:nth-child(5)').click(function(){$('html,body').animate({scrollTop:$('.about-us').offset().top}, 800);});
+        $('#backtop').click(function(){$('html,body').animate({scrollTop:0}, 800);});
+      });
+      //alert($('li:nth-child(1)').html());
+    </script>
+  </body>
+</html>
+
+
+

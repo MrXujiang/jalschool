@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<title>那段日子，是我们最美好的回忆</title>
+		<meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="blank">
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="css/lib/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style>
+    /*reset*/
+      a,a:hover {
+        text-decoration: none;
+      }
+      body {margin-top: 24px;}
+    /*公用样式*/
+      .article-label {
+        display: inline-block;
+        padding: 0 3px;
+        border: 1px solid #06f;
+      }
+      .icon-add {
+        margin-left: 2px;
+        margin-right: 2px;
+      }
+      .icon-add:before {
+        content: '+';
+        font-weight: bolder;
+      }
+    /*article-header部分*/
+      .section-header,
+      .section-tit,
+      .article-content {
+        margin: 12px 18px; 
+      }
+      .section-header,
+      .article-content {
+        padding-bottom: 24px;
+        border-bottom: 1px solid #E8E8E8;
+      }
+      .author-photo {
+        display: block;
+        float: left;
+        margin-right: 12px;
+        border-radius: 50%;
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        color: #fff;
+        background-color: #000; 
+      }
+      .author-photo:hover {
+        color: #EEE;
+      }
+      .add-box {
+        float: right;
+        width: 92px;
+        height: 2em;
+        line-height: 2em;
+        border-radius: 12px;
+        text-align: center;
+        color: #fff;
+        background-color: #4CAE4C;
+        cursor: pointer;
+      }
+      .add-box > .add-follow {
+        padding-left: 4px;
+        font-size: 12px;
+        border-left: 1px solid #fff;
+      }
+      .school-class {
+        padding-top: 4px;
+      }
+      
+      /*section-tit*/
+      .section-tit > h2 {
+        margin-bottom: 24px;
+        font-weight: bold;
+        color: #555;
+      }
+      .article-read,
+      .article-view,
+      .article-love {
+        padding-right: 14px;
+      }
+      /*article-content*/
+
+     .article-content img {
+       padding-top: 12px;
+       padding-bottom: 12px;
+       width: 100%;
+     }
+     .article-content > p {
+       text-indent: 2em;
+       line-height: 24px;
+       font-size: 16px;
+       color: #2f2f2f;
+     }
+     .short-txt,
+     .article-thumb {
+       position: relative;
+       left: 50%;
+     }
+     .short-txt {
+       margin: 0 -80px 6px;
+       padding-bottom: 4px;
+       width: 160px;
+       border-bottom: 2px solid #E8E8E8;
+       text-align:center;
+       color: #ADADAD;
+     }
+     .article-thumb {
+       margin-left: -48px;
+     }
+     .back-page {
+       display: block;
+       position: fixed;
+       right: 6%;
+       bottom: 24px;
+       width: 3em;
+       height: 3em;
+       border-radius: 50%;
+       line-height: 3em;
+       text-align: center;
+       color: #fff;
+       background-color: #4CAE4C;
+       transition: width .4s, height .4s, font-size .4s,line-height .4s;
+     }
+     .back-page:hover {
+       color: #fff;
+       width: 3.2em;
+       height: 3.2em;
+       font-size: 2em;
+       line-height: 3.2em;
+     }
+    </style>
+	</head>
+	<body>
+	  <header>
+  	  
+    </header>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-1 col-sm-2 col-md-2"></div>
+          <div class="col-xs-10 col-sm-8 col-md-8">
+            <div class="section-header">
+              <a class="author-photo" href="#">
+                                        武
+              </a>
+              <span class="article-label">作者</span>
+              <a href="#"><span>小武哥哥</span></a>
+              <span class="team-position text-gray">e+1创业团队负责人</span>
+              <div class="add-box">
+                <span class="icon-add"></span>
+                <span class="add-follow">添加关注</span>
+              </div>
+              <div class="school-class text-gray">
+                <span>机械自动化学院工业精益</span>
+                <span>四年级</span>
+              </div>
+            </div>
+            
+            <!--section-tit部分-->
+            <div class="section-tit">
+              <h2>那段日子，是我们最美好的回忆</h2>
+              <span class="article-read text-gray">阅读122</span><span class="article-view text-gray">评论22</span><sapn class="article-love text-gray">喜欢33</sapn>
+            </div>
+            <div class="article-content">
+              <span>文/小武哥哥</span>
+              <p>6月15日，我接到一个通知，学院有一个创新创业的夏令营，而此时我对接下来暑假
+                                            并没有太多的打算，我想正好可以参加一个活动来度过这个暑假，正式这个并不慎重
+                                            的决定，让我在接下来的日子收益匪浅。</p>
+              <div>
+                <img src="img/yichuang/01.jpg" alt="" />
+                <div class="short-txt">那些年，我们风雨无阻</div>
+              </div>
+              <p>刚来到青山那会，一场大雨袭击了整个校园，我整个心都被淋湿了。不久一个十几人
+                                            的大团队就建立起来了，在导师的初步培训和精心安排下，我们很快就开始的创业团
+                                            队的建设。大团队被分成两个小团队，双向选择环节，我们先根据各自的经历、能力
+                                            和水平，确定自己选择的职责，CEO选择环节，几位候选人向大家表达了自己能力与
+                                            经历、这是一个推销自己的过程，两位经验丰富的同学脱颖而出，获得大家的认可，
+                                            成为各自小组的CEO。这是第一次考验我们，每个人在一个公司的定位是很明确的，
+                                            你必须要有一定的能力，才能胜任一个岗位，即使现在只是一个虚拟的创业公司。之
+                                            前我有过很多思考，自己究竟是一个怎样的人，自己能干什们，自己想干什么，当具
+                                            体到一个真实的企业岗位，我却有点心虚了，我想干的与自己能干可能的并不匹配，
+                                            而且对自我的认识也并不清楚，于是我根据自己的兴趣，确定了自己的意向，做技术
+                                            方向。最后成功加入其中一组，遇到了现在一直相伴的团队队友，实属幸运！</p>
+              <div>
+                <img src="img/yichuang/02.jpg" alt="" />
+                <div class="short-txt">史上最强信号塔</div>                                  
+              </div>
+              <p>那一个月的经历现在还清晰地记得，从现在看来，这段时间可能是我整个大学收获
+                                                  最多的一个月，项目的导入到最后的项目收尾，每天几乎都是120%的投入，这种高
+                                                  强度的项目，绝不亚于在企业中的实际项目。现在工作了，对比看来，我甚至觉得
+                                                  企业的一些项目完全是小case。在这段时间里，导师刻意以公司化的形式来运作我
+                                                  们这个大项目，每个团队的项目也以公司化形式执行，我们得以提早感受和深度体
+                                                  验职业环境。</p>
+              <div>
+                <img src="img/yichuang/03.jpg" alt="" />
+                <div class="short-txt">不知道有木有工资...</div>                                  
+              </div>
+              <p>作为创业项目，我们需要兼顾多个维度状况，一开始导师给我们初步介绍了当前的创
+                                             业环境，行业现状，这是一个项目导入过程，提供给我们一些思考方向，我们各自把
+                                             自己珍藏良久的点子、创业项目拿出来，我记得自己提出了将近10个创业点子，有好
+                                             几个都经过长时间的深度思考和调查，自认为比较成熟和让人激动，觉得终于有这个
+                                             机会和大家分享了。第一次团队汇总起来的项目有好几十个，我们惊讶于各自的创造
+                                             力，信心满满。经过激烈的头脑风暴，我们痛苦的pass掉好多项目，精选了几个项目
+                                             后，我们与导师分享了我们的初步成果，就像面对投资人一样，项目的好坏最终还是
+                                             要获得资本的认可，面对导师，我们清晰地表达了每个项目的初步设想及进一步的发
+                                             展。然而我们面临的是导师严格的挑刺，你的项目市场现状如何，具体的产品和服务
+                                             是怎样的，产品服务可实现性如何，进一步发展空间如何。好多项目就在这样一个反
+                                             复思考论证的过程中逐渐清晰，然而这个过程是及其痛苦的，你需要一次次构造的可
+                                             行的产品服务商业体系，然后不合理又一遍一遍推翻。你总觉得终于想出了一个不错
+                                             的方案，和团队在激烈的讨论中逐步完善，到最后方案可能还是无法通过，那段时间
+                                             团队成员普遍感到脑袋被撕裂一般，新体系在大脑中建立，然后被撕裂，再建立，再
+                                             撕裂。</p>
+              <div>
+                <img src="img/yichuang/04.jpg" alt="" />
+                <div class="short-txt">创业点子讨论中...</div>                                  
+              </div>
+              <div>
+                <img src="img/yichuang/05.jpg" alt="" />
+                <div class="short-txt">导师亲切的指导</div>                                  
+              </div>
+              <div>
+                <img src="img/yichuang/06.jpg" alt="" />
+                <div class="short-txt">批斗大会顺利召开</div>                                  
+              </div>
+              <div>
+                <img src="img/yichuang/07.jpg" alt="" />
+                <div class="short-txt">老师帮我们修改完善项目</div>                                  
+              </div>
+              <p>但正是这样一个一个过程，我们思考和经历了很多很多以前从没想过，没遇到过的问
+                                             题，也在问题引导这个过程中进行着快速的学习，基于解决问题的学习让平时里很枯
+                                             燥乏味的学习变成了一件快乐的事。比如我们之前可能也学过团队管理的知识，可是
+                                             很多东西并不能理解，在我们要保证完成这个项目的情况下，我们必须要对我们的团
+                                             队进行有效的管控，小组CEO作为项目负责人，他有自己需要完成的任务，然而当时
+                                             项目进行到一半，每个人工作效率不同，工作量不同，各自的进度产生不协调，有时
+                                             团队成员还有个人小情绪，这些东西都对项目顺利完成产生负面影响。当时我明显感
+                                             受到某个时间段团队里面弥漫着紧张的气氛，我们后来认识到一些有作用的原则，比
+                                             如对事不对人的原则，这避免了将个人情绪带入工作中，影响大家。正是这些激烈的
+                                             团队磨合过程，一起战斗过程，我们相互间产生进一步的连接，从同事到战友，大概
+                                             强大的团队就是这样形成的吧!</p>
+              <div>
+                <img src="img/yichuang/08.jpg" alt="" />
+                <div class="short-txt">一个个犀利的小眼神</div>                                  
+              </div>
+              <p>在团队内部每次的谈论会上，那投入程度和激烈程度都快要打起来了，每个人的特性
+                                             完全的暴露出来了，思维方式、思维习惯完全不同。期间导师给我们进行了一些关于
+                                             职业方面的培训，我意识到自己思维方式一直停留在学生的身份上，而处于企业中，
+                                             需要完全转变思维，要以职业人的身份与行为方式来应对工作，职业人的职业素养、
+                                             修养、技能这些都是那时我所不具备的。我意识到以后从事工作，不能像学生心态一
+                                             样。另外在团队分工上，经过这个磨练过程，我也逐渐发现自己可能并不适合做技术，
+                                             但未来的职业方向，我却在一直探索。</p>
+              <div>
+                <img src="img/yichuang/09.jpg" alt="" />
+                <div class="short-txt">我们曾跨过山河大海</div>                                  
+              </div>
+              <div>
+                <img src="img/yichuang/10.jpg" alt="" />
+                <div class="short-txt">未来职业人之路</div>                                  
+              </div>
+              <p>整个项目预定时间在一个月，那时做市场分析时，我专注程度前所未有，每天项目规
+                                            定时间结束后，我依然沉浸在项目里面，常常在凌晨时又发现一条重要市场方面的信
+                                            息，兴奋的睡不着！项目收尾阶段时间已经很紧急了，我记得在项目提交前三天，我
+                                            陪同小组CEO一起对整个项目进行了全局的审核，到那天实际已经是项目的第n个版本，
+                                            我们依然从这个看似没问题的项目计划书中修改了大量的内容，整整一个通宵，我们
+                                            完成最终版时天已经亮了。我有一种从来没有过的成就感。</p>
+              <div>
+                <img src="img/yichuang/11.jpg" alt="" />
+                <div class="short-txt">未来职业人之路</div>                                  
+              </div>
+              <div>
+                <img src="img/yichuang/12.jpg" alt="" />
+                <div class="short-txt">未来职业人之路</div>                                  
+              </div>
+              <p>很幸运大二的数暑假拥有的那段经历，遇到了现在的几个一生的朋友，在后面的的日
+                                             子里陆续做了几个项目，都是那时团队的部分成员全力参与和支持。在前段时间的秋
+                                             招，在填写简历时经常看到项目经历这一要求，团队里的一些同学可以写好多的项目
+                                             经历，于是回忆起那时做的第一个项目的过程，倍感温馨</p> 
+              <div>
+                <img src="img/yichuang/14.jpg" alt="" />
+                <div class="short-txt">一起走过的夜晚</div>                                  
+              </div>
+              <span class="pull-right text-gray">&copy;著作权归作者所有</span>
+            </div>
+            <span class="article-thumb btn btn-success btn-lg">喜欢就赞哟</span>
+            
+            <footer>
+              <div class="grow-footer text-center">
+                <ul>
+                  <li><a href="#">关于我们</a></li>
+                  <li><a href="#">合作中心</a></li>
+                  <li><a href="#">法律责任</a></li>
+                  <li><a href="#">返回顶部</a></li>
+                  <li><span class="time">版权所有：完美工作室</span></li>
+                </ul>
+              </div>
+            </footer>
+          </div>
+          <div class="col-xs-1 col-sm-2 col-md-2"></div>
+        </div>
+      </div>
+    </section>
+     <!-------浮动按钮------->
+    <div class="sider-box hidden-xs">
+      <div class="app-download">
+        <span class="">APP下载</span>
+        <span class="app-code"></span>
+      </div>
+      <div class="weibo">
+        <span class="">微博</span>
+        <span class="weibo-code"></span>
+      </div>
+      <div class="wechat">
+        <span class="">微信</span>
+        <span class="wechat-code"></span>
+      </div>
+      <div class="back-top">
+        <a href="#">顶部</a>
+      </div>
+    </div>
+    <a class="back-page" href="growroad.html">返回</a>
+    <script src="js/lib/jquery-1.9.1.js"></script>
+    <script src="js/lib/bootstrap.js"></script>
+    <script src="js/sider_unit.js"></script>
+	</body>
+</html>
